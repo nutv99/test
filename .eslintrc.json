@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "jasmine": true
+  },
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "class-methods-use-this": "off",
+    "comma-dangle": "off",
+    "consistent-return": "off",
+    "no-underscore-dangle": "off",
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": [
+        "**/__tests__/**.js",
+        "**/webpack.config.js",
+        "webpack.config.*.js"
+      ],
+      "optionalDependencies": false
+    }],
+    "react/jsx-filename-extension": "off",
+    "react/require-default-props": "off"
+  }
+}
